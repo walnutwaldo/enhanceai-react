@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jawblia/npm-test.git"
+    "url": "git+https://github.com/walnutwaldo/enhanceai-react.git"
   },
   "peerDependencies": {
     "@types/node": "^16.18.13",
