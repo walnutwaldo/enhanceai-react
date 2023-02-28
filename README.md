@@ -1,5 +1,9 @@
 # EnhanceAI for React
 
+<a href="https://www.npmjs.com/package/enhanceai">
+    <img src="https://img.shields.io/npm/v/enhanceai"/>
+</a>
+
 This is a React wrapper to integrate [EnhanceAI](https://enhanceai.dev) into a React web app.
 
 ## About EnhanceAI
