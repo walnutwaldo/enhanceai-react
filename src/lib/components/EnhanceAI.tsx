@@ -4,8 +4,9 @@ export default function EnhanceAI(props: {
     children: any,
     context?: string,
     defaultSuggestion?: string,
+    delay?: number,
 }) {
-    let {children, context, defaultSuggestion} = props;
+    let {children, context, defaultSuggestion, delay} = props;
 
     const [enabled, setEnabled] = useState(false);
 
@@ -41,6 +42,12 @@ export default function EnhanceAI(props: {
             }
             if (defaultSuggestion) {
                 props['data-aidefaultsuggestion'] = defaultSuggestion;
+            }
+            if (delay) {
+                props['data-enhanceai-delay'] = Math.max(100, delay);
+                if (delay < 100) {
+                    console.error(`EnhanceAI: The delay provided: ${delay} is below the minimum of 100ms. It has automatically been increased to 100ms.`);
+                }
             }
 
             return React.cloneElement(child, props);
