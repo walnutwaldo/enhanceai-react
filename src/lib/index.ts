@@ -1,3 +1,4 @@
 import EnhanceAI from "./components/EnhanceAI";
+import EnhanceAIProvider from "./components/EnhanceAIProvider";
 
-export {EnhanceAI};
+export { EnhanceAIProvider, EnhanceAI };
