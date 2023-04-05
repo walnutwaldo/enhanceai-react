@@ -1,6 +1,6 @@
 {
   "name": "enhanceai",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "React wrapper for EnhanceAI (enhanceai.dev), a library for enhancing web app text input with AI autocomplete.",
   "author": "Walden Yan (waldenyan20@gmail.com)",
   "keywords": [
