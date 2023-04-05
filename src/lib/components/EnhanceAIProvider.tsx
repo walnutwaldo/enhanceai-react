@@ -17,7 +17,7 @@ export default function EnhanceAIProvider(props: {
 
   useEffect(() => {
     activateScript();
-  }, []);
+  }, [apiKey]);
 
   return <>{children}</>;
 }
