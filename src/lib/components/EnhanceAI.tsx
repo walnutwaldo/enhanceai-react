@@ -26,10 +26,11 @@ export default function EnhanceAI(props: {
   }
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setEnabled(true);
       activateScript();
     }, 1000);
+    return () => clearTimeout(timeout);
   }, []);
 
   if (enabled) {
