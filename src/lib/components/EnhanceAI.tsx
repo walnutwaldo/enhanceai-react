@@ -34,6 +34,9 @@ export default function EnhanceAI(props: {
 
   if (enabled) {
     children = React.Children.map(children, (child) => {
+      if (!React.isValidElement<any>(child)) {
+        return child;
+      }
       let props: any = {};
       const className = (child.props.className || "") + " enhanceai";
       props = {
